@@ -1,0 +1,9 @@
+household_profile,income_1_eur,income_2_eur,combined_gross_eur,est_max_mortgage_label_ab_eur,nhg_eligible_2026,starter_transfer_tax_exempt_under35,gross_monthly_payment_38pct_eur,net_monthly_payment_y1_eur,monthly_net_income_2026_30pct_eur,monthly_net_income_2027_27pct_eur,net_payment_share_2026_30pct_pct,net_payment_share_2027_27pct_pct,net_payment_share_no_ruling_pct
+"Single €50,000",50000,0,50000,231776,yes,yes,1080,832,3345,3262,24.9,25.5,25.5
+"Single €65,000",65000,0,65000,299021,yes,yes,1393,1073,4595,4493,23.4,23.9,27.7
+"Single €80,000",80000,0,80000,383256,yes,yes,1786,1376,5509,5408,25.0,25.4,30.6
+"Single €100,000",100000,0,100000,497358,no,yes,2317,1785,6587,6461,27.1,27.6,34.2
+"Single €130,000",130000,0,130000,677989,no,no,3159,2434,8146,7964,29.9,30.6,38.5
+"Couple €65k + €45k",65000,45000,110000,539197,no,yes,2512,1935,7646,7545,25.3,25.7,27.9
+"Couple €85k + €55k",85000,55000,140000,718577,no,no,3348,2579,9247,9140,27.9,28.2,31.7
+"Couple €100k + €70k",100000,70000,170000,894738,no,no,4169,3212,10674,10548,30.1,30.4,34.5

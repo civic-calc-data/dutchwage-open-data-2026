@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use these datasets in an article, report, or analysis, please cite DutchWage as below."
+title: "DutchWage Open Data 2026-2027: Dutch Expat Tax, Box 3 Wealth Tax, and Mortgage Buying Power"
+type: dataset
+version: "2026.11"
+date-released: "2026-11-22"
+license: CC-BY-4.0
+url: "https://dutchwage.nl/reports/"
+authors:
+  - name: "DutchWage"
+    website: "https://dutchwage.nl/"
+    email: "contact@dutchwage.nl"
+keywords:
+  - netherlands
+  - dutch-tax
+  - 30-percent-ruling
+  - 27-percent-ruling
+  - box-3
+  - tegenbewijsregeling
+  - dutch-mortgage
+  - nibud-2026
+  - nhg
+  - open-data
+abstract: "Three open CSV datasets modeling finalized 2026 Dutch tax parameters and legislated 2027 expat ruling changes (30% to 27%), 2026 Box 3 fictitious vs. actual-return break-even rates, and 2026 Nibud/NHG expat mortgage buying power."

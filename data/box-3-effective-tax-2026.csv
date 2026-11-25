@@ -1,0 +1,10 @@
+net_wealth_eur,bank_savings_tax_single_eur,bank_savings_effective_rate_pct,etf_fictitious_tax_single_eur,etf_effective_rate_single_pct,etf_fictitious_tax_partner_eur,etf_effective_rate_partner_pct,actual_return_2pct_tax_eur,tegenbewijs_savings_at_2pct_return_eur,breakeven_actual_return_single_etf_pct
+50000,0,0.00,0,0.00,0,0.00,360,0,0.00
+75000,72,0.10,338,0.45,0,0.00,540,0,1.25
+100000,187,0.19,878,0.88,0,0.00,720,158,2.44
+150000,418,0.28,1958,1.31,676,0.45,1080,878,3.63
+200000,648,0.32,3038,1.52,1756,0.88,1440,1598,4.22
+300000,1109,0.37,5198,1.73,3916,1.31,2160,3038,4.81
+500000,2030,0.41,9518,1.90,8236,1.65,3600,5918,5.29
+750000,3182,0.42,14918,1.99,13636,1.82,5400,9518,5.53
+1000000,4334,0.43,20318,2.03,19036,1.90,7200,13118,5.64
