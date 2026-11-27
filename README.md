@@ -1,6 +1,6 @@
 # DutchWage Open Data (2026-2027)
 
-Open CSV datasets modeling Dutch income tax, the 2027 expat ruling reduction (30% to 27%), 2026 Box 3 wealth tax under *tegenbewijsregeling*, and 2026 Nibud mortgage borrowing capacity.
+Open CSV datasets modeling Dutch income tax, the 2027 expat ruling reduction (30% to 27%), 2026 Box 3 wealth tax under *tegenbewijsregeling*, and Nibud mortgage borrowing capacity for 2026 and 2027.
 
 All figures are computed directly from finalized 2026 statutory tables published by Belastingdienst, Rijksoverheid, Nibud, and NHG. The interactive calculators and full methodology notes live at [dutchwage.nl](https://dutchwage.nl/).
 
@@ -10,7 +10,7 @@ All figures are computed directly from finalized 2026 statutory tables published
 |---|---|---|
 | [`data/expat-tax-burden-2026-2027.csv`](data/expat-tax-burden-2026-2027.csv) | 12 gross salary levels (€45,000 to €150,000), 2026 30% vs. 2027 27% ruling and under-30 Master's threshold | [Expat Tax Burden Report](https://dutchwage.nl/reports/expat-tax-burden-2026-2027/) / [Salary Calculator](https://dutchwage.nl/) |
 | [`data/box-3-effective-tax-2026.csv`](data/box-3-effective-tax-2026.csv) | 9 net wealth tiers (€50,000 to €1,000,000), savings (1.28%) vs. ETFs (6.00%) vs. actual return (*tegenbewijsregeling*) | [Box 3 Effective Tax Report](https://dutchwage.nl/reports/box-3-effective-tax-2026/) / [Box 3 Calculator](https://dutchwage.nl/box-3-calculator/) |
-| [`data/expat-buying-power-2026-2027.csv`](data/expat-buying-power-2026-2027.csv) | 8 single and dual-income households, Nibud 2026 max mortgage (label A/B, 3.8% annuity) and post-ruling budget share | [Expat Buying Power Report](https://dutchwage.nl/reports/expat-buying-power-2026-2027/) / [Mortgage Calculator](https://dutchwage.nl/mortgage-calculator/) |
+| [`data/expat-buying-power-2026-2027.csv`](data/expat-buying-power-2026-2027.csv) | 8 single and dual-income households, Nibud 2026 and 2027 max mortgage (label A/B, 3.8% annuity), NHG eligibility and post-ruling budget share | [Expat Buying Power Report](https://dutchwage.nl/reports/expat-buying-power-2026-2027/) / [Mortgage Calculator](https://dutchwage.nl/mortgage-calculator/) |
 
 ---
 
@@ -65,20 +65,20 @@ Because the actual-return rebuttal (*Wet tegenbewijsregeling box 3*) drops the �
 
 ## 3. Expat Home-Buying Power (2026-2027)
 
-Dutch lenders calculate maximum mortgages from gross salary under 2026 Nibud financing-burden norms. The 30% ruling does not expand maximum loan capacity, but it lowers the share of monthly net income absorbed by the mortgage until the ruling drops to 27% in 2027 or expires.
+Dutch lenders calculate maximum mortgages from gross salary under Nibud financing-burden norms. The table shows the 2026 norms and, in the last two columns, the 2027 norms (binding offers from 1 January 2027) for the same incomes. The 30% ruling does not expand maximum loan capacity, but it lowers the share of monthly net income absorbed by the mortgage until the ruling drops to 27% in 2027 or expires.
 
-Model assumptions: 30-year annuity at 3.8% fixed interest, energy label A/B (+€10,000 Nibud bonus), €17,000 single-earner bonus (gross income >= €30,000), zero BKR/DUO debt, 0.35% *eigenwoningforfait*, and 37.56% *hypotheekrenteaftrek* cap. 2026 statutory limits: €470,000 NHG cap (€498,200 with energy-saving measures) and €555,000 *startersvrijstelling* (0% transfer tax for buyers aged 18 to 34; 2% on the entire price above €555,000).
+Model assumptions: 30-year annuity at 3.8% fixed interest, energy label A/B (+€10,000 Nibud bonus), €17,000 single-earner bonus (gross income >= €30,000), zero BKR/DUO debt, 0.35% *eigenwoningforfait*, and 37.56% *hypotheekrenteaftrek* cap. 2026 statutory limits: €470,000 NHG cap (€498,200 with energy-saving measures) and €555,000 *startersvrijstelling* (0% transfer tax for buyers aged 18 to 34; 2% on the entire price above €555,000). 2027 changes: the single-earner bonus rises to €18,000 (gross income >= €31,000) and the NHG cap to €500,000 (€530,000 with energy-saving measures). Under the 2027 norms every household can borrow €3,325 to €12,161 more, but the €100,000 single earner (€503,723) still falls just outside NHG.
 
-| Household | Combined gross | Est. max loan (label A/B) | NHG (<= €470k) | Starter 0% (<= €555k) | Net payment (Year 1) | Share (30% 2026) | Share (27% 2027) | Share (no ruling) |
-|---|---:|---:|:---:|:---:|---:|---:|---:|---:|
-| Single €50,000 | €50,000 | €231,776 | yes | yes | €832 | 24.9% | 25.5% | 25.5% |
-| Single €65,000 | €65,000 | €299,021 | yes | yes | €1,073 | 23.4% | 23.9% | 27.7% |
-| Single €80,000 | €80,000 | €383,256 | yes | yes | €1,376 | 25.0% | 25.4% | 30.6% |
-| Single €100,000 | €100,000 | €497,358 | no | yes | €1,785 | 27.1% | 27.6% | 34.2% |
-| Single €130,000 | €130,000 | €677,989 | no | no | €2,434 | 29.9% | 30.6% | 38.5% |
-| Couple €65k + €45k | €110,000 | €539,197 | no | yes | €1,935 | 25.3% | 25.7% | 27.9% |
-| Couple €85k + €55k | €140,000 | €718,577 | no | no | €2,579 | 27.9% | 28.2% | 31.7% |
-| Couple €100k + €70k | €170,000 | €894,738 | no | no | €3,212 | 30.1% | 30.4% | 34.5% |
+| Household | Combined gross | Max loan 2026 (label A/B) | NHG 2026 (<= €470k) | Starter 0% (<= €555k) | Net payment (Year 1) | Share (30% 2026) | Share (27% 2027) | Share (no ruling) | Max loan 2027 (label A/B) | NHG 2027 (<= €500k) |
+|---|---:|---:|:---:|:---:|---:|---:|---:|---:|---:|:---:|
+| Single €50,000 | €50,000 | €229,093 | yes | yes | €822 | 24.6% | 25.2% | 25.2% | €234,564 | yes |
+| Single €65,000 | €65,000 | €293,208 | yes | yes | €1,052 | 22.9% | 23.4% | 27.1% | €296,533 | yes |
+| Single €80,000 | €80,000 | €388,979 | yes | yes | €1,396 | 25.3% | 25.8% | 31.1% | €397,132 | yes |
+| Single €100,000 | €100,000 | €493,781 | no | yes | €1,772 | 26.9% | 27.4% | 33.9% | €503,723 | no |
+| Single €130,000 | €130,000 | €664,040 | no | no | €2,384 | 29.3% | 29.9% | 37.7% | €674,340 | no |
+| Couple €65k + €45k | €110,000 | €535,263 | no | yes | €1,921 | 25.1% | 25.5% | 27.7% | €543,132 | no |
+| Couple €85k + €55k | €140,000 | €696,043 | no | no | €2,499 | 27.0% | 27.3% | 30.7% | €706,058 | no |
+| Couple €100k + €70k | €170,000 | €843,052 | no | no | €3,026 | 28.4% | 28.7% | 32.5% | €855,213 | no |
 
 ---
 
@@ -125,6 +125,8 @@ Model assumptions: 30-year annuity at 3.8% fixed interest, energy label A/B (+�
 - `net_payment_share_2026_30pct_pct`: Year 1 net mortgage payment as a percentage of net monthly income under 30% ruling (%).
 - `net_payment_share_2027_27pct_pct`: Year 1 net mortgage payment as a percentage of net monthly income under 27% ruling (%).
 - `net_payment_share_no_ruling_pct`: Year 1 net mortgage payment as a percentage of net monthly income after the ruling ends (%).
+- `est_max_mortgage_label_ab_2027_eur`: Estimated maximum 2027 Nibud mortgage for the same household and property (label A/B, 3.8% interest, €18,000 single-earner bonus) (EUR).
+- `nhg_eligible_2027`: Whether the estimated 2027 max loan stays within the €500,000 NHG 2027 limit (`yes`/`no`).
 
 ---
 
@@ -136,8 +138,8 @@ Model assumptions: 30-year annuity at 3.8% fixed interest, energy label A/B (+�
 - Belastingdienst: [30% facility thresholds and €262,000 WNT cap (2026)](https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility)
 - Rijksoverheid: [2027 expatregeling reduction to 27%](https://www.rijksoverheid.nl/themas/werk/inkomstenbelasting/belastingvoordeel-buitenlandse-werknemers)
 - Belastingdienst: [Box 3 calculation 2026](https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/berekening-box-3-inkomen-2026), [Heffingsvrij vermogen](https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/heffingsvrij-vermogen), and [Actual return (werkelijk rendement)](https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/wat-is-mijn-werkelijk-rendement)
-- Nibud: [2026 Dutch mortgage financing-burden norms](https://www.nibud.nl/onderwerpen/wonen/hypotheek/)
-- NHG: [2026 cost limit (€470,000 / €498,200)](https://www.nhg.nl/consument/wat-is-nhg/)
+- Nibud: [2026 and 2027 Dutch mortgage financing-burden norms](https://www.nibud.nl/onderwerpen/wonen/hypotheek/)
+- NHG: [2026 cost limit (€470,000 / €498,200)](https://www.nhg.nl/consument/wat-is-nhg/) and [2027 Voorwaarden en normen (€500,000 / €530,000)](https://www.nhg.nl/media/niyjzin0/vn-nhg-2027.pdf)
 - Belastingdienst: [Hypotheekrenteaftrek and 37.56% tariefsaanpassing](https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/tariefsaanpassing-eigen-woning)
 
 ## Interactive Calculators and Embeds
